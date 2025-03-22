@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/your-username/my-python-app.git'
+                git credentialsId: 'github-token', url: 'https://github.com/m-salehi8/mobo.git'
             }
         }
 
